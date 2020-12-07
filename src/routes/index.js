@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/addBook', (req, res) => {
-  res.send('Adding a new Book');
+  res.sendFile(path.resolve(__dirname, '../views/add_book.html');
 });
 
 module.exports = router;
