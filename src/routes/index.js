@@ -14,4 +14,8 @@ router.get('/add_student', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../views/add_student.html'));
 });
 
+router.get('/add_profesor', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../views/add_profesor.html'));
+});
+
 module.exports = router;
