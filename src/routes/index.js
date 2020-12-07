@@ -1,8 +1,9 @@
 const express = require('express');
+const path = require('path');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.send('Libreria la chida');
+  res.sendFile(path.resolve(__dirname, '../views/root.html'));
 });
 
 router.get('/addBook', (req, res) => {
